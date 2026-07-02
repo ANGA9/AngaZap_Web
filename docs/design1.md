@@ -249,3 +249,23 @@ Columns: `Why AngaZip` / `Earn with AngaZip` (Ride, Bike Taxi, Courier, Fleet) /
 5. Build Safety section (solid color block) and Fleet/Business spotlight
 6. Build Cities section + App Download band
 7. Generate and drop in all Gemini images last, once layout is proven with placeholders — this avoids re-cropping images if section proportions shift during build
+
+---
+
+## 8. Progress Updates
+
+**July 2026 Updates:**
+- [x] Initialized Next.js project with Tailwind CSS and TypeScript
+- [x] Locked in brand tokens (colors, fonts) in `globals.css`
+- [x] Built sticky `Navbar.tsx` with mobile menu
+- [x] Built `HeroSection.tsx` with gradient placeholder and service tabs
+- [x] Built `ServiceGrid.tsx` with 4 cards, blob shapes, and placeholders
+- [x] Built `WhyChoose.tsx` 4-column icon grid
+- [x] Built `SafetySection.tsx` with full-width indigo background and shield shape
+- [x] Built `FleetSpotlight.tsx` split section for B2B fleet
+- [x] Built `AvailableCities.tsx` with pill badges
+- [x] Built `AppDownloadCTA.tsx` with app store buttons and phone mockup placeholder
+- [x] Built `Footer.tsx` with 5-column layout
+- [x] Assembled all components into `page.tsx`
+- [x] Started dev server on port 3001
+- [x] Generate and integrate images using Gemini

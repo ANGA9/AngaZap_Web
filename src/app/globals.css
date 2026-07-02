@@ -16,7 +16,7 @@
   --indigo-light: #C7D2FE;
 }
 
-@theme inline {
+@theme {
   --color-indigo: var(--indigo);
   --color-indigo-deep: var(--indigo-deep);
   --color-cyan-accent: var(--accent-cyan);

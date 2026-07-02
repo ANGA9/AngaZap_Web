@@ -413,24 +413,25 @@ ul {
   border-radius: var(--radius-lg);
   transition: all 0.2s ease;
   background-color: transparent;
+  border: 1px solid transparent;
 }
 
 .mega-menu-card:hover {
-  background-color: var(--color-indigo-tint);
+  background-color: transparent;
+  border-color: #0f172a;
 }
 
 .mega-card-icon {
   font-size: 1.5rem;
-  background-color: rgba(99, 102, 241, 0.1);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   color: #0f172a;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
   flex-shrink: 0;
-  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 50%;
 }
 
 .mega-card-text h4 {

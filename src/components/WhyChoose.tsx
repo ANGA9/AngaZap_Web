@@ -40,40 +40,24 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section className="py-20 lg:py-28" style={{ backgroundColor: "var(--indigo-tint)" }}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="section" style={{ backgroundColor: "var(--color-indigo-tint)" }}>
+      <div className="container">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
-            style={{ fontFamily: "var(--font-heading)", color: "var(--near-black)" }}
-          >
+        <div className="section-header">
+          <h2 className="section-title">
             Why people and businesses choose AngaZip
           </h2>
         </div>
 
         {/* 4-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="icon-grid">
           {reasons.map((reason) => (
-            <div key={reason.title} className="text-center lg:text-left">
-              <div
-                className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5"
-                style={{ backgroundColor: "white", color: "var(--indigo)" }}
-              >
+            <div key={reason.title} className="icon-box">
+              <div className="icon-box-icon" style={{ backgroundColor: "white" }}>
                 {reason.icon}
               </div>
-              <h3
-                className="text-lg font-bold mb-2"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--near-black)" }}
-              >
-                {reason.title}
-              </h3>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "var(--muted-grey)", fontFamily: "var(--font-body)" }}
-              >
-                {reason.description}
-              </p>
+              <h4>{reason.title}</h4>
+              <p>{reason.description}</p>
             </div>
           ))}
         </div>

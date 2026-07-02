@@ -45,75 +45,48 @@ const services = [
 
 export default function ServiceGrid() {
   return (
-    <section id="services" className="py-20 lg:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="services" className="service-section section">
+      <div className="container">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
-            style={{ fontFamily: "var(--font-heading)", color: "var(--near-black)" }}
-          >
+        <div className="section-header">
+          <h2 className="section-title">
             One app, every way to move
           </h2>
-          <p
-            className="mt-5 text-base lg:text-lg leading-relaxed"
-            style={{ color: "var(--muted-grey)", fontFamily: "var(--font-body)" }}
-          >
+          <p className="section-subtitle">
             Whether it&apos;s you, your parcel, or your entire delivery fleet —
             AngaZip gets it there.
           </p>
         </div>
 
         {/* 2x2 Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="service-grid">
           {services.map((service) => (
-            <div
-              key={service.headline}
-              className="group relative bg-white rounded-2xl border border-gray-100 p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden"
-            >
-              {/* Blob Background */}
-              <div
-                className="absolute top-0 left-0 w-40 h-40 rounded-full opacity-10 -translate-x-10 -translate-y-10 group-hover:scale-125 transition-transform duration-500"
-                style={{ backgroundColor: service.blobColor }}
-              />
-
+            <div key={service.headline} className="service-card">
+              {/* Blob Background placeholder (handled in image or layout via css usually, simplified here) */}
+              
               {/* Illustration Image */}
-              <div className="relative w-full h-48 lg:h-56 mb-6 flex items-center justify-center">
+              <div className="service-card-image">
                 <Image
                   src={service.imageSrc}
                   alt={service.headline}
                   fill
-                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
               {/* Text Content */}
-              <h3
-                className="text-xl lg:text-2xl font-bold mb-2"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--near-black)" }}
-              >
-                {service.headline}
-              </h3>
-              <p
-                className="text-sm lg:text-base mb-5 leading-relaxed"
-                style={{ color: "var(--muted-grey)", fontFamily: "var(--font-body)" }}
-              >
-                {service.description}
-              </p>
+              <div className="service-card-content">
+                <h3>{service.headline}</h3>
+                <p>{service.description}</p>
 
-              {/* Links */}
-              <div className="flex gap-6">
-                {service.links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="text-sm font-semibold transition-colors duration-200 hover:underline underline-offset-4"
-                    style={{ color: "var(--indigo)", fontFamily: "var(--font-body)" }}
-                  >
-                    {link.label} ›
-                  </a>
-                ))}
+                {/* Links */}
+                <div className="service-card-links">
+                  {service.links.map((link) => (
+                    <a key={link.label} href={link.href}>
+                      {link.label} ›
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

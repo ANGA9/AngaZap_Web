@@ -90,8 +90,15 @@ ul {
 }
 
 .section {
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 /* Typography Utilities */
@@ -148,6 +155,7 @@ ul {
 .btn-outline-white {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   background-color: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(8px);
@@ -808,6 +816,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transform: scale(1.15);
 }
 
 .service-card-content h3 {
@@ -940,7 +949,7 @@ ul {
   flex-direction: column;
   border-radius: 32px;
   overflow: hidden;
-  margin-bottom: var(--space-xl);
+  margin-bottom: 0;
 }
 
 .split-bg-indigo { background-color: var(--color-indigo); color: var(--color-white); }

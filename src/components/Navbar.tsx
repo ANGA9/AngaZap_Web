@@ -87,6 +87,7 @@ const megaMenuData = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState("fair-services");
 
@@ -122,28 +123,72 @@ export default function Navbar() {
                 href="#download" 
                 className={`btn-primary btn-nav-cta hidden-mobile ${(scrolled || mobileMenuOpen) ? 'visible' : 'hidden'}`}
                 style={{ 
-                  backgroundColor: "var(--color-indigo-tint)", 
+                  backgroundColor: "var(--color-white)", 
                   color: "var(--color-indigo)",
+                  border: "1px solid var(--color-indigo)",
                   boxShadow: "none"
                 }}
               >
                 Get the App
               </Link>
 
-              {/* Language Pill */}
-              <button className="nav-pill lang-pill" style={{ display: "flex", alignItems: "center", gap: "8px", padding: "6px 12px" }}>
-                <svg width="22" height="15" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style={{ borderRadius: '2px', objectFit: 'cover' }}>
-                  <rect width="300" height="66.66" fill="#FF9933"/>
-                  <rect y="66.66" width="300" height="66.66" fill="#FFFFFF"/>
-                  <rect y="133.33" width="300" height="66.66" fill="#138808"/>
-                  <circle cx="150" cy="100" r="24" fill="none" stroke="#000080" strokeWidth="4"/>
-                  <line x1="150" y1="76" x2="150" y2="124" stroke="#000080" strokeWidth="2"/>
-                  <line x1="126" y1="100" x2="174" y2="100" stroke="#000080" strokeWidth="2"/>
-                  <line x1="133" y1="83" x2="167" y2="117" stroke="#000080" strokeWidth="2"/>
-                  <line x1="167" y1="83" x2="133" y2="117" stroke="#000080" strokeWidth="2"/>
-                </svg>
-                <span style={{ fontWeight: 700 }}>En</span>
-              </button>
+              {/* Language Pill & Dropdown */}
+              <div style={{ position: 'relative' }}>
+                <button 
+                  className="nav-pill lang-pill" 
+                  style={{ display: "flex", alignItems: "center", gap: "8px", padding: "6px 12px" }}
+                  onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                >
+                  <svg width="22" height="15" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style={{ borderRadius: '2px', objectFit: 'cover' }}>
+                    <rect width="300" height="66.66" fill="#FF9933"/>
+                    <rect y="66.66" width="300" height="66.66" fill="#FFFFFF"/>
+                    <rect y="133.33" width="300" height="66.66" fill="#138808"/>
+                    <circle cx="150" cy="100" r="24" fill="none" stroke="#000080" strokeWidth="4"/>
+                    <line x1="150" y1="76" x2="150" y2="124" stroke="#000080" strokeWidth="2"/>
+                    <line x1="126" y1="100" x2="174" y2="100" stroke="#000080" strokeWidth="2"/>
+                    <line x1="133" y1="83" x2="167" y2="117" stroke="#000080" strokeWidth="2"/>
+                    <line x1="167" y1="83" x2="133" y2="117" stroke="#000080" strokeWidth="2"/>
+                  </svg>
+                  <span style={{ fontWeight: 700 }}>En</span>
+                </button>
+
+                {languageMenuOpen && (
+                  <div className="language-dropdown-card">
+                    <div className="language-dropdown-header">
+                      <h4>Select Language</h4>
+                      <button onClick={() => setLanguageMenuOpen(false)}>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                      </button>
+                    </div>
+                    <div className="language-dropdown-grid">
+                      <button className="lang-option active" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">English</span>
+                        <span className="lang-en">English</span>
+                      </button>
+                      <button className="lang-option" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">हिन्दी</span>
+                        <span className="lang-en">Hindi</span>
+                      </button>
+                      <button className="lang-option" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">मराठी</span>
+                        <span className="lang-en">Marathi</span>
+                      </button>
+                      <button className="lang-option" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">తెలుగు</span>
+                        <span className="lang-en">Telugu</span>
+                      </button>
+                      <button className="lang-option" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">தமிழ்</span>
+                        <span className="lang-en">Tamil</span>
+                      </button>
+                      <button className="lang-option" onClick={() => setLanguageMenuOpen(false)}>
+                        <span className="lang-native">বাংলা</span>
+                        <span className="lang-en">Bengali</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
 
               {/* Desktop Menu Button */}
               <button 

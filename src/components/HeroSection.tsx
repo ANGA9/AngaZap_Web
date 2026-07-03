@@ -90,7 +90,7 @@ export default function HeroSection() {
             {slides.map((_, idx) => (
               <button 
                 key={idx}
-                className={`hero-dot ${currentSlide === idx ? 'active' : ''}`}
+                className={`hero-dot ${currentSlide === idx ? 'active' : currentSlide > idx ? 'passed' : ''}`}
                 onClick={() => setCurrentSlide(idx)}
                 aria-label={`Go to slide ${idx + 1}`}
               />

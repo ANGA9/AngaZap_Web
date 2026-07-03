@@ -610,14 +610,34 @@ ul {
   flex: 1;
   height: 3px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.4);
-  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.4); /* The darker/transparent white base */
   padding: 0;
   border: none;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-dot.active {
-  background-color: var(--color-white);
+/* The solid white fill */
+.hero-dot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  background-color: #ffffff;
+}
+
+/* Animate the fill over the exact duration of the slide (3.5s) */
+.hero-dot.active::after {
+  width: 100%;
+  transition: width 3.5s linear;
+}
+
+/* Keep previous bars fully filled */
+.hero-dot.passed::after {
+  width: 100%;
+  transition: none;
 }
 
 .hero-indicators-container {
@@ -639,10 +659,7 @@ ul {
   }
   .hero-dot {
     height: 4px;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  .hero-dot.active {
-    background-color: var(--color-cyan);
+    background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -1249,16 +1266,27 @@ ul {
 /* Footer */
 .footer {
   background-color: #f9fafb;
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
+  padding-top: 48px;
+  padding-bottom: 48px;
   border-top: 1px solid #f3f4f6;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-xl);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+  .footer-grid {
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+  }
 }
 
 .footer-brand p {

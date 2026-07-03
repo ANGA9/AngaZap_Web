@@ -120,7 +120,7 @@ export default function Navbar() {
             <div className="navbar-actions">
               <Link 
                 href="#download" 
-                className={`btn-primary btn-nav-cta ${(scrolled || mobileMenuOpen) ? 'visible' : 'hidden'}`}
+                className={`btn-primary btn-nav-cta hidden-mobile ${(scrolled || mobileMenuOpen) ? 'visible' : 'hidden'}`}
                 style={{ 
                   backgroundColor: "var(--color-indigo-tint)", 
                   color: "var(--color-indigo)",

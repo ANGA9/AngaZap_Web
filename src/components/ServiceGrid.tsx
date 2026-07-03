@@ -9,7 +9,7 @@ const services = [
       { label: "For Drivers", href: "/ride" },
     ],
     blobColor: "#4338CA",
-    imageSrc: "/images/cab.png",
+    imageSrc: "/images/cab_white_v2.png",
   },
   {
     headline: "Bike Taxi",
@@ -19,7 +19,7 @@ const services = [
       { label: "For Drivers", href: "/ride" },
     ],
     blobColor: "#00C2FF",
-    imageSrc: "/images/bike.png",
+    imageSrc: "/images/bike_white_v2.png",
   },
   {
     headline: "City to City",

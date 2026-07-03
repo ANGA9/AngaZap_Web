@@ -21,9 +21,12 @@ const cities = [
   "Vadodara",
 ];
 
+const citiesRow1 = cities.slice(0, 10);
+const citiesRow2 = cities.slice(10);
+
 export default function AvailableCities() {
   return (
-    <section className="section" style={{ backgroundColor: "var(--color-white)" }}>
+    <section className="section cities-section">
       <div className="container">
         {/* Section Header */}
         <div className="section-header">
@@ -34,21 +37,56 @@ export default function AvailableCities() {
             And expanding every month. See if AngaZap is in your city.
           </p>
         </div>
+      </div>
 
-        {/* City Pills */}
-        <div className="cities-wrapper">
-          {cities.map((city) => (
-            <span key={city} className="city-pill">
-              {/* Location Pin */}
-              <svg className="w-3.5 h-3.5 flex-shrink-0" style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-              </svg>
-              {city}
-            </span>
-          ))}
+      {/* Infinite Marquees */}
+      <div className="marquee-container">
+        {/* Row 1 - Left to Right */}
+        <div className="marquee-row marquee-left">
+          <div className="marquee-content">
+            {/* Original */}
+            {citiesRow1.map((city) => (
+              <CityPill key={city} city={city} />
+            ))}
+            {/* Duplicated for infinite loop */}
+            {citiesRow1.map((city) => (
+              <CityPill key={`${city}-dup`} city={city} />
+            ))}
+            {/* Duplicated twice for ultra-wide screens */}
+            {citiesRow1.map((city) => (
+              <CityPill key={`${city}-dup2`} city={city} />
+            ))}
+          </div>
+        </div>
+
+        {/* Row 2 - Right to Left */}
+        <div className="marquee-row marquee-right">
+          <div className="marquee-content">
+            {citiesRow2.map((city) => (
+              <CityPill key={city} city={city} />
+            ))}
+            {citiesRow2.map((city) => (
+              <CityPill key={`${city}-dup`} city={city} />
+            ))}
+            {citiesRow2.map((city) => (
+              <CityPill key={`${city}-dup2`} city={city} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function CityPill({ city }: { city: string }) {
+  return (
+    <span className="city-pill">
+      {/* Location Pin */}
+      <svg className="w-4 h-4 flex-shrink-0" style={{ width: "16px", height: "16px", opacity: 0.6 }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+      </svg>
+      {city}
+    </span>
   );
 }

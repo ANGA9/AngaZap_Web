@@ -47,23 +47,17 @@ export default function AppDownloadCTA() {
 
           {/* Right — Phone Mockup */}
           <div className="download-image" style={{ position: "relative" }}>
-            {/* Abstract Background Shape */}
-            <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "160%", height: "160%", opacity: 0.35, zIndex: 0 }}>
-              <Image
-                src="/images/abstract_route_shape_transparent.png"
-                alt="Decorative background shape"
-                fill
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+
             
             {/* Phone Mockup */}
             <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%" }}>
               <Image
-                src="/images/phone_mockup_transparent.png"
+                src="/images/phone_mockup_transparent_v2.png"
                 alt="AngaZap App Mockup"
                 fill
-                sizes="(max-width: 1024px) 100vw, 300px"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={100}
+                className="phone-mockup-img"
                 style={{ objectFit: "contain" }}
               />
             </div>

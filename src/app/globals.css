@@ -1148,6 +1148,21 @@ ul {
   overflow: hidden;
 }
 
+.download-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/indian_traffic_pattern.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
 .download-bg-shape-1 {
   position: absolute;
   top: 0;
@@ -1249,6 +1264,16 @@ ul {
   height: 100%;
   width: auto;
   object-fit: contain;
+}
+
+.phone-mockup-img {
+  transform: scale(1.85); /* Slightly bigger on desktop */
+}
+
+@media (max-width: 767px) {
+  .phone-mockup-img {
+    transform: scale(2.4); /* Significantly bigger on mobile */
+  }
 }
 
 @media (min-width: 640px) {

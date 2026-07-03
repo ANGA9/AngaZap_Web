@@ -453,6 +453,25 @@ ul {
   line-height: 1.4;
 }
 
+@media (max-width: 767px) {
+  .mega-menu-grid {
+    gap: 12px;
+  }
+  .mega-menu-card {
+    padding: 12px;
+    gap: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.2);
+  }
+  .mega-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .mega-card-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .mobile-only-cta {
   display: inline-flex;
 }

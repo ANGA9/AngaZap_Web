@@ -11,7 +11,7 @@ const slides = [
     subtitle: "Cabs, bike taxis, intercity rides, and business fleets — one app for everything that needs to move.",
   },
   {
-    image: "/images/hero_banner_2_final.png",
+    image: "/images/hero_banner_2_v2.png",
     titleLine1: "Beat the traffic.",
     titleLine2: "Quick bike rides.",
     subtitle: "Navigate the busy city streets quickly and affordably with our verified bike taxi partners.",
@@ -90,15 +90,8 @@ export default function HeroSection() {
             {slides.map((_, idx) => (
               <button 
                 key={idx}
+                className={`hero-dot ${currentSlide === idx ? 'active' : ''}`}
                 onClick={() => setCurrentSlide(idx)}
-                style={{ 
-                  width: currentSlide === idx ? "24px" : "8px", 
-                  height: "8px", 
-                  borderRadius: "4px", 
-                  backgroundColor: currentSlide === idx ? "var(--color-cyan)" : "rgba(255,255,255,0.4)",
-                  transition: "all 0.3s ease",
-                  padding: 0
-                }}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}

@@ -1,3 +1,5 @@
+"use client";
+import { useState, useRef } from "react";
 import Image from "next/image";
 
 const services = [
@@ -44,6 +46,18 @@ const services = [
 ];
 
 export default function ServiceGrid() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      const maxScroll = scrollWidth - clientWidth;
+      const progress = maxScroll > 0 ? (scrollLeft / maxScroll) * 100 : 0;
+      setScrollProgress(progress);
+    }
+  };
+
   return (
     <section id="services" className="service-section section">
       <div className="container">
@@ -58,8 +72,16 @@ export default function ServiceGrid() {
           </p>
         </div>
 
+        {/* Mobile Swipe Indicator */}
+        <div className="mobile-swipe-wrapper">
+          <span style={{ fontSize: "0.85rem", color: "var(--color-text-muted)", fontWeight: 600 }}>Swipe to explore</span>
+          <div className="swipe-track">
+            <div className="swipe-thumb" style={{ width: `${Math.max(25, scrollProgress)}%` }} />
+          </div>
+        </div>
+
         {/* 2x2 Card Grid */}
-        <div className="service-grid">
+        <div className="service-grid" ref={scrollRef} onScroll={handleScroll}>
           {services.map((service) => (
             <div key={service.headline} className="service-card">
               {/* Blob Background placeholder (handled in image or layout via css usually, simplified here) */}

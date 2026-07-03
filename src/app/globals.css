@@ -967,6 +967,10 @@ ul {
   object-fit: cover;
 }
 
+.split-image-right img {
+  object-position: right center;
+}
+
 .split-content {
   padding: var(--space-lg);
   display: flex;
@@ -1012,6 +1016,25 @@ ul {
 .feature-list li svg {
   color: var(--color-indigo);
   flex-shrink: 0;
+}
+
+/* Feature Pill style for Fleet Spotlight */
+.feature-list-indigo li.feature-pill {
+  background-color: #EEF2FF;
+  padding: 8px 16px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  max-width: 100%;
+  color: var(--color-indigo-deep);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.feature-list-indigo li.feature-pill svg {
+  color: var(--color-indigo);
 }
 
 @media (min-width: 1024px) {

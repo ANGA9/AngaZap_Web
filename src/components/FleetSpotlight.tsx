@@ -14,9 +14,9 @@ export default function FleetSpotlight() {
         <div className="split-section split-bg-tint reverse">
           
           {/* Image */}
-          <div className="split-image">
+          <div className="split-image split-image-right">
             <Image
-              src="/images/fleet_spotlight.png"
+              src="/images/fleet_spotlight_v2.png"
               alt="AngaZap Business Fleet"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -41,25 +41,11 @@ export default function FleetSpotlight() {
             </p>
 
             {/* Feature Pills */}
-            <ul className="feature-list" style={{ display: "flex", flexWrap: "wrap", gap: "12px", listStyle: "none" }}>
-              {features.map((feature) => (
-                <li
-                  key={feature}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    padding: "8px 16px",
-                    borderRadius: "999px",
-                    fontSize: "0.875rem",
-                    fontWeight: "500",
-                    backgroundColor: "white",
-                    border: "1px solid #e5e7eb",
-                    margin: 0
-                  }}
-                >
-                  <svg style={{ width: "16px", height: "16px", flexShrink: 0, color: "var(--color-indigo)" }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            <ul className="feature-list feature-list-indigo">
+              {features.map((feature, idx) => (
+                <li key={idx} className="feature-pill">
+                  <svg style={{ width: "20px", height: "20px", flexShrink: 0 }} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   {feature}
                 </li>

@@ -47,7 +47,7 @@ export default function HeroSection() {
         >
           <Image
             src={slide.image}
-            alt="AngaZap Hero"
+            alt="Riksho Hero"
             fill
             priority={index === 0}
             sizes="100vw"

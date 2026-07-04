@@ -17,7 +17,7 @@ export default function FleetSpotlight() {
           <div className="split-image split-image-right">
             <Image
               src="/images/fleet_spotlight_v2.png"
-              alt="AngaZap Business Fleet"
+              alt="Riksho Business Fleet"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -35,7 +35,7 @@ export default function FleetSpotlight() {
             </h2>
 
             <p>
-              From single parcels to full truckloads — AngaZap gives e-commerce
+              From single parcels to full truckloads — Riksho gives e-commerce
               sellers, SMEs, and enterprises on-demand access to verified vehicles
               and drivers, with live tracking on every dispatch.
             </p>

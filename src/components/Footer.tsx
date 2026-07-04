@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    title: "Why AngaZap",
+    title: "Why Riksho",
     links: [
       { label: "Fair Pricing", href: "#" },
       { label: "Safety", href: "/safety" },
@@ -11,7 +11,7 @@ const footerColumns = [
     ],
   },
   {
-    title: "Earn with AngaZap",
+    title: "Earn with Riksho",
     links: [
       { label: "Drive a Cab", href: "/ride" },
       { label: "Ride a Bike Taxi", href: "/ride" },
@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/">
               <span className="navbar-brand" style={{ color: "var(--color-indigo)" }}>
-                AngaZap
+                Riksho
               </span>
             </Link>
             <p>
@@ -100,7 +100,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} AngaZap Technologies Pvt. Ltd. All rights reserved.
+            © {new Date().getFullYear()} Riksho Technologies Pvt. Ltd. All rights reserved.
           </p>
           <div className="footer-legal">
             <Link href="#">Privacy Policy</Link>

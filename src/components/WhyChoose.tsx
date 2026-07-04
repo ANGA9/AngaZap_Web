@@ -45,7 +45,7 @@ export default function WhyChoose() {
         {/* Section Header */}
         <div className="section-header">
           <h2 className="section-title">
-            Why people and businesses choose AngaZap
+            Why people and businesses choose Riksho
           </h2>
         </div>
 

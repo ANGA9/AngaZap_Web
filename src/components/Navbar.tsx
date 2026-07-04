@@ -28,7 +28,7 @@ const megaMenuData = [
     id: "fair-services",
     label: "Fair services",
     links: [
-      { label: "Why choose AngaZap", desc: "Discover what makes us the fairest choice.", icon: icons.star, href: "#" },
+      { label: "Why choose Riksho", desc: "Discover what makes us the fairest choice.", icon: icons.star, href: "#" },
       { label: "City rides", desc: "Everyday rides at fair prices you agree on.", icon: icons.car, href: "#" },
       { label: "City to City", desc: "Travel comfortably between cities.", icon: icons.map, href: "#" },
       { label: "Delivery", desc: "Fast and reliable door-to-door delivery.", icon: icons.box, href: "#" },
@@ -36,7 +36,7 @@ const megaMenuData = [
   },
   {
     id: "earn",
-    label: "Earn with AngaZap",
+    label: "Earn with Riksho",
     links: [
       { label: "Earn with us", desc: "Drive on your own terms and keep more.", icon: icons.dollar, href: "#" },
       { label: "City rides", desc: "Provide rides in your local city.", icon: icons.car, href: "#" },
@@ -113,7 +113,7 @@ export default function Navbar() {
             {/* Wordmark */}
             <Link href="/" className="navbar-brand">
               <span className={(scrolled || mobileMenuOpen) ? "" : "brand-highlight"}>
-                AngaZap
+                Riksho
               </span>
             </Link>
 

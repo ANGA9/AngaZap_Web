@@ -9,7 +9,7 @@ export default function SafetySection() {
           <div className="split-image">
             <Image
               src="/images/safety.png"
-              alt="Safety first with AngaZap"
+              alt="Safety first with Riksho"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

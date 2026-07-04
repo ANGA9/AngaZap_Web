@@ -12,7 +12,7 @@ export default function AppDownloadCTA() {
           {/* Left — Content */}
           <div className="download-content">
             <h2>
-              Get the AngaZap app
+              Get the Riksho app
             </h2>
 
             <p>
@@ -53,7 +53,7 @@ export default function AppDownloadCTA() {
             <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%" }}>
               <Image
                 src="/images/phone_mockup_transparent_v2.png"
-                alt="AngaZap App Mockup"
+                alt="Riksho App Mockup"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={100}

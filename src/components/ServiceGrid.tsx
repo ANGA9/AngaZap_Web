@@ -68,7 +68,7 @@ export default function ServiceGrid() {
           </h2>
           <p className="section-subtitle">
             Whether it&apos;s you, your parcel, or your entire delivery fleet —
-            AngaZap gets it there.
+            Riksho gets it there.
           </p>
         </div>
 

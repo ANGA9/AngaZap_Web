@@ -113,7 +113,7 @@ export default function Navbar() {
             {/* Wordmark */}
             <Link href="/" className="navbar-brand">
               <span className={(scrolled || mobileMenuOpen) ? "" : "brand-highlight"}>
-                Riksho
+                riksho
               </span>
             </Link>
 

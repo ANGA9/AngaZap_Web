@@ -227,7 +227,7 @@ ul {
 }
 
 .navbar.navbar-scrolled .navbar-brand {
-  color: var(--color-text);
+  color: var(--color-indigo);
 }
 
 .brand-highlight {
@@ -1351,8 +1351,8 @@ ul {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   margin-bottom: 48px;
 }
 
@@ -1365,6 +1365,17 @@ ul {
     gap: var(--space-xl);
     margin-bottom: var(--space-xl);
   }
+}
+
+.footer-brand {
+  grid-column: 1 / -1;
+}
+
+.footer-logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--color-indigo);
 }
 
 .footer-brand p {
@@ -1407,16 +1418,21 @@ ul {
 .footer-bottom p {
   color: var(--color-text-muted);
   font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .footer-legal {
   display: flex;
-  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer-legal a {
   color: var(--color-text-muted);
   font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .footer-legal a:hover {
@@ -1428,6 +1444,9 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .footer-brand {
+    grid-column: auto;
+  }
   .footer-grid { grid-template-columns: 2fr repeat(4, 1fr); }
   .footer-bottom {
     flex-direction: row;

@@ -31,7 +31,6 @@ const footerColumns = [
   {
     title: "Support",
     links: [
-      { label: "Help Center", href: "/support" },
       { label: "Report an Issue", href: "#" },
       { label: "FAQs", href: "#" },
       { label: "Terms & Conditions", href: "#" },
@@ -49,8 +48,8 @@ export default function Footer() {
           {/* Wordmark Column */}
           <div className="footer-brand">
             <Link href="/">
-              <span className="navbar-brand" style={{ color: "var(--color-indigo)" }}>
-                Riksho
+              <span className="footer-logo">
+                riksho
               </span>
             </Link>
             <p>

@@ -28,11 +28,19 @@ export default function AdminLayout({
     const checkSession = async () => {
       try {
         const { data: { session } } = await supabaseAdminClient.auth.getSession();
-        if (!session) throw new Error("No session");
+        if (!session) {
+          router.push("/admin/login");
+          setLoading(false);
+          return;
+        }
 
         // Verify admin role via backend
         const me = await adminFetch("/admin/me");
-        if (me.role !== "admin") throw new Error("Not an admin");
+        if (me.role !== "admin") {
+          router.push("/admin/login");
+          setLoading(false);
+          return;
+        }
 
         setUser(me);
       } catch (err) {

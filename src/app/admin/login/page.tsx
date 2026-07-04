@@ -21,10 +21,7 @@ export default function AdminLogin() {
     setError("");
     
     const { error: signInError } = await supabaseAdminClient.auth.signInWithOtp({
-      email,
-      options: {
-        shouldCreateUser: false, // Security: do not allow strangers to create accounts via OTP
-      },
+      email
     });
 
     setLoading(false);

@@ -6,9 +6,9 @@ export async function adminFetch(endpoint: string, options: RequestInit = {}) {
   // Get current session token
   const { data: { session } } = await supabaseAdminClient.auth.getSession();
   
-  const headers: HeadersInit = {
+  const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    ...(options.headers || {}),
+    ...(options.headers as Record<string, string> || {}),
   };
 
   if (session?.access_token) {

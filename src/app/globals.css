@@ -224,6 +224,21 @@ ul {
   transition: color 0.3s ease;
   z-index: 60;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-img {
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .brand-logo-img {
+    height: 44px;
+  }
 }
 
 .navbar.navbar-scrolled .navbar-brand {
@@ -862,15 +877,16 @@ ul {
 .service-card-image {
   position: relative;
   width: 100%;
-  height: 200px;
-  margin-bottom: var(--space-md);
+  height: 220px;
+  margin-bottom: 48px;
 }
 
 .service-card-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: scale(1.15);
+  transform: scale(1.2);
+  transform-origin: center center;
 }
 
 .service-card-content h3 {
@@ -946,7 +962,13 @@ ul {
 
   .service-card-image {
     width: 50%;
+    height: 250px;
     margin-bottom: 0;
+  }
+  
+  .service-card-image img {
+    transform: scale(1.4);
+    transform-origin: center center;
   }
 
   .service-card-content {

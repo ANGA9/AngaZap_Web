@@ -48,9 +48,11 @@ export default function Footer() {
           {/* Wordmark Column */}
           <div className="footer-brand">
             <Link href="/">
-              <span className="footer-logo">
-                riksho
-              </span>
+              <img 
+                src="/images/white_riksho.png" 
+                alt="Riksho" 
+                className="brand-logo-img"
+              />
             </Link>
             <p>
               One app for rides, deliveries, and business fleets. Fair fares, verified partners, live tracking.

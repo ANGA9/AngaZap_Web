@@ -112,9 +112,11 @@ export default function Navbar() {
           <div className="navbar-top-row">
             {/* Wordmark */}
             <Link href="/" className="navbar-brand">
-              <span className={(scrolled || mobileMenuOpen) ? "" : "brand-highlight"}>
-                riksho
-              </span>
+              <img 
+                src={(scrolled || mobileMenuOpen) ? "/images/white_riksho.png" : "/images/final_riksho.png"} 
+                alt="Riksho" 
+                className="brand-logo-img"
+              />
             </Link>
 
             {/* Desktop Right Actions */}

@@ -29,9 +29,9 @@ const megaMenuData = [
     label: "Fair services",
     links: [
       { label: "Why choose Riksho", desc: "Discover what makes us the fairest choice.", icon: icons.star, href: "#" },
-      { label: "City rides", desc: "Everyday rides at fair prices you agree on.", icon: icons.car, href: "#" },
-      { label: "City to City", desc: "Travel comfortably between cities.", icon: icons.map, href: "#" },
-      { label: "Delivery", desc: "Fast and reliable door-to-door delivery.", icon: icons.box, href: "#" },
+      { label: "City rides", desc: "Everyday rides at fair prices you agree on.", icon: icons.car, href: "/city-rides" },
+      { label: "City to City", desc: "Travel comfortably between cities.", icon: icons.map, href: "/city-to-city" },
+      { label: "Delivery", desc: "Fast and reliable door-to-door delivery.", icon: icons.box, href: "/delivery" },
     ]
   },
   {

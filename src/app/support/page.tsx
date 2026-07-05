@@ -87,15 +87,15 @@ export default function SupportHubPage() {
         {/* Contact Section */}
         <section className="section">
           <div className="container">
-            <div style={{ background: "var(--color-indigo)", borderRadius: "var(--radius-lg)", padding: "48px", color: "white", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "32px" }}>
+            <div style={{ background: "white", border: "2px solid var(--color-indigo)", borderRadius: "var(--radius-lg)", padding: "48px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "32px", boxShadow: "var(--shadow-card)" }}>
               <div style={{ flex: "1 1 400px" }}>
-                <h3 className="font-display" style={{ fontSize: "32px", marginBottom: "16px", color: "white" }}>Still need help?</h3>
-                <p style={{ fontSize: "18px", opacity: 0.9, marginBottom: 0 }}>
+                <h3 className="font-display" style={{ fontSize: "32px", marginBottom: "16px", color: "var(--color-indigo)" }}>Still need help?</h3>
+                <p className="text-muted" style={{ fontSize: "18px", marginBottom: 0 }}>
                   Our support team is available 24/7. Reach out via live chat or submit a detailed ticket.
                 </p>
               </div>
               <div>
-                <Link href="/contact" className="btn-primary" style={{ backgroundColor: "white", color: "var(--color-indigo)", padding: "16px 32px", fontSize: "16px", fontWeight: 600 }}>
+                <Link href="/contact" className="btn-primary" style={{ backgroundColor: "var(--color-indigo)", color: "white", padding: "16px 32px", fontSize: "16px", fontWeight: 600, border: "none" }}>
                   Contact Support
                 </Link>
               </div>

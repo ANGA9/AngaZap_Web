@@ -25,62 +25,43 @@ const icons = {
 
 const megaMenuData = [
   {
-    id: "fair-services",
-    label: "Fair services",
+    id: "services",
+    label: "Services & Locations",
     links: [
-      { label: "Why choose Riksho", desc: "Discover what makes us the fairest choice.", icon: icons.star, href: "/why-choose-riksho" },
-      { label: "City rides", desc: "Everyday rides at fair prices you agree on.", icon: icons.car, href: "/city-rides" },
+      { label: "City rides", desc: "Everyday rides at fair prices.", icon: icons.car, href: "/city-rides" },
       { label: "City to City", desc: "Travel comfortably between cities.", icon: icons.map, href: "/city-to-city" },
       { label: "Delivery", desc: "Fast and reliable door-to-door delivery.", icon: icons.box, href: "/delivery" },
+      { label: "Cities & Airports", desc: "Find out where we operate.", icon: icons.globe, href: "/cities" },
+      { label: "Live Tracking", desc: "Real-time safety and route tracking.", icon: icons.shield, href: "/live-tracking" },
     ]
   },
   {
     id: "earn",
     label: "Earn with Riksho",
     links: [
-      { label: "Earn with us", desc: "Drive on your own terms and keep more.", icon: icons.dollar, href: "/earn" },
-      { label: "City rides", desc: "Provide rides in your local city.", icon: icons.car, href: "/drive-a-cab" },
+      { label: "Drive a Cab", desc: "Provide rides in your local city.", icon: icons.car, href: "/drive-a-cab" },
       { label: "Bike Taxi", desc: "Flexible bike taxi rides.", icon: icons.bike, href: "/ride-a-bike-taxi" },
       { label: "Courier delivery", desc: "Deliver small packages quickly.", icon: icons.box, href: "/deliver-as-courier" },
-      { label: "Freight delivery", desc: "Move heavy cargo and goods.", icon: icons.truck, href: "/join-a-fleet" },
+      { label: "Join a Fleet", desc: "Move heavy cargo and goods.", icon: icons.truck, href: "/join-a-fleet" },
+    ]
+  },
+  {
+    id: "company",
+    label: "Company & Impact",
+    links: [
+      { label: "About us", desc: "Learn about our mission and vision.", icon: icons.building, href: "/about-us" },
+      { label: "Careers", desc: "Join our team and build the future.", icon: icons.briefcase, href: "/careers" },
+      { label: "Newsroom", desc: "Latest updates and press releases.", icon: icons.news, href: "/blog" },
+      { label: "Safety Hub", desc: "Our commitment to keeping everyone safe.", icon: icons.shield, href: "/safety" },
+      { label: "Impact & Sustainability", desc: "See how we're changing communities.", icon: icons.leaf, href: "/impact" },
     ]
   },
   {
     id: "support",
     label: "Support",
     links: [
-      { label: "Passengers", desc: "Help with your rides and account.", icon: icons.user, href: "/support/passengers" },
-      { label: "Drivers", desc: "Assistance for our driving partners.", icon: icons.car, href: "/support/drivers" },
-      { label: "Couriers and bikes", desc: "Support for delivery partners.", icon: icons.bike, href: "/support/couriers" },
-      { label: "App issues", desc: "Technical help and troubleshooting.", icon: icons.phone, href: "/support/app-issues" },
-    ]
-  },
-  {
-    id: "safety",
-    label: "Safety",
-    links: [
-      { label: "Safety pact", desc: "Our commitment to keeping you safe.", icon: icons.heart, href: "/safety-pact" },
-      { label: "Passenger safety", desc: "Features designed to protect riders.", icon: icons.shield, href: "/safety/passenger" },
-      { label: "Driver safety", desc: "Tools and guidelines for driver security.", icon: icons.car, href: "/safety/driver" },
-    ]
-  },
-  {
-    id: "impact",
-    label: "Impact",
-    links: [
-      { label: "Our Impact", desc: "See how we're changing communities.", icon: icons.globe, href: "/impact" },
-      { label: "Initiatives", desc: "Programs driving positive change.", icon: icons.star, href: "/initiatives" },
-      { label: "Sustainability", desc: "Our commitment to the environment.", icon: icons.leaf, href: "/sustainability" },
-    ]
-  },
-  {
-    id: "about",
-    label: "About us",
-    links: [
-      { label: "Company", desc: "Learn about our mission and vision.", icon: icons.building, href: "/about-us" },
-      { label: "Careers", desc: "Join our team and build the future.", icon: icons.briefcase, href: "/careers" },
-      { label: "Newsroom", desc: "Latest updates and press releases.", icon: icons.news, href: "/blog" },
-      { label: "Contacts", desc: "Get in touch with us directly.", icon: icons.contact, href: "/contact" },
+      { label: "Help Center", desc: "Find answers and troubleshooting.", icon: icons.user, href: "/support" },
+      { label: "Contact Us", desc: "Get in touch with us directly.", icon: icons.contact, href: "/contact" },
     ]
   }
 ];
@@ -89,7 +70,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeTab, setActiveTab] = useState("fair-services");
+  const [activeTab, setActiveTab] = useState("services");
 
   useEffect(() => {
     const handleScroll = () => {

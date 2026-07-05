@@ -2,12 +2,13 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    title: "Why Riksho",
+    title: "Services & Locations",
     links: [
-      { label: "Fair Pricing", href: "/why-choose-riksho#fair-pricing" },
-      { label: "Safety", href: "/safety" },
+      { label: "City rides", href: "/city-rides" },
+      { label: "City to City", href: "/city-to-city" },
+      { label: "Delivery", href: "/delivery" },
+      { label: "Cities & Airports", href: "/cities" },
       { label: "Live Tracking", href: "/live-tracking" },
-      { label: "Cities", href: "/cities" },
     ],
   },
   {
@@ -20,21 +21,20 @@ const footerColumns = [
     ],
   },
   {
-    title: "Company",
+    title: "Company & Impact",
     links: [
       { label: "About Us", href: "/about-us" },
       { label: "Careers", href: "/careers" },
       { label: "Newsroom", href: "/blog" },
-      { label: "Contact", href: "/contact" },
+      { label: "Safety Hub", href: "/safety" },
+      { label: "Impact & Sustainability", href: "/impact" },
     ],
   },
   {
     title: "Support",
     links: [
-      { label: "Report an Issue", href: "/support/app-issues" },
-      { label: "FAQs", href: "/support/faq" },
-      { label: "Terms & Conditions", href: "/terms" },
-      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Help Center", href: "/support" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
 ];

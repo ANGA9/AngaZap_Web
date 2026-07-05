@@ -49,38 +49,38 @@ const megaMenuData = [
     id: "support",
     label: "Support",
     links: [
-      { label: "Passengers", desc: "Help with your rides and account.", icon: icons.user, href: "#" },
-      { label: "Drivers", desc: "Assistance for our driving partners.", icon: icons.car, href: "#" },
-      { label: "Couriers and bikes", desc: "Support for delivery partners.", icon: icons.bike, href: "#" },
-      { label: "App issues", desc: "Technical help and troubleshooting.", icon: icons.phone, href: "#" },
+      { label: "Passengers", desc: "Help with your rides and account.", icon: icons.user, href: "/support/passengers" },
+      { label: "Drivers", desc: "Assistance for our driving partners.", icon: icons.car, href: "/support/drivers" },
+      { label: "Couriers and bikes", desc: "Support for delivery partners.", icon: icons.bike, href: "/support/couriers" },
+      { label: "App issues", desc: "Technical help and troubleshooting.", icon: icons.phone, href: "/support/app-issues" },
     ]
   },
   {
     id: "safety",
     label: "Safety",
     links: [
-      { label: "Safety pact", desc: "Our commitment to keeping you safe.", icon: icons.heart, href: "#" },
-      { label: "Passenger safety", desc: "Features designed to protect riders.", icon: icons.shield, href: "#" },
-      { label: "Driver safety", desc: "Tools and guidelines for driver security.", icon: icons.car, href: "#" },
+      { label: "Safety pact", desc: "Our commitment to keeping you safe.", icon: icons.heart, href: "/safety-pact" },
+      { label: "Passenger safety", desc: "Features designed to protect riders.", icon: icons.shield, href: "/safety/passenger" },
+      { label: "Driver safety", desc: "Tools and guidelines for driver security.", icon: icons.car, href: "/safety/driver" },
     ]
   },
   {
     id: "impact",
     label: "Impact",
     links: [
-      { label: "Our Impact", desc: "See how we're changing communities.", icon: icons.globe, href: "#" },
-      { label: "Initiatives", desc: "Programs driving positive change.", icon: icons.star, href: "#" },
-      { label: "Sustainability", desc: "Our commitment to the environment.", icon: icons.leaf, href: "#" },
+      { label: "Our Impact", desc: "See how we're changing communities.", icon: icons.globe, href: "/impact" },
+      { label: "Initiatives", desc: "Programs driving positive change.", icon: icons.star, href: "/initiatives" },
+      { label: "Sustainability", desc: "Our commitment to the environment.", icon: icons.leaf, href: "/sustainability" },
     ]
   },
   {
     id: "about",
     label: "About us",
     links: [
-      { label: "Company", desc: "Learn about our mission and vision.", icon: icons.building, href: "#" },
-      { label: "Careers", desc: "Join our team and build the future.", icon: icons.briefcase, href: "#" },
-      { label: "Newsroom", desc: "Latest updates and press releases.", icon: icons.news, href: "#" },
-      { label: "Contacts", desc: "Get in touch with us directly.", icon: icons.contact, href: "#" },
+      { label: "Company", desc: "Learn about our mission and vision.", icon: icons.building, href: "/about-us" },
+      { label: "Careers", desc: "Join our team and build the future.", icon: icons.briefcase, href: "/careers" },
+      { label: "Newsroom", desc: "Latest updates and press releases.", icon: icons.news, href: "/blog" },
+      { label: "Contacts", desc: "Get in touch with us directly.", icon: icons.contact, href: "/contact" },
     ]
   }
 ];

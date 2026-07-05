@@ -4,10 +4,10 @@ const footerColumns = [
   {
     title: "Why Riksho",
     links: [
-      { label: "Fair Pricing", href: "#" },
+      { label: "Fair Pricing", href: "/why-choose-riksho#fair-pricing" },
       { label: "Safety", href: "/safety" },
-      { label: "Live Tracking", href: "#" },
-      { label: "Cities", href: "#" },
+      { label: "Live Tracking", href: "/live-tracking" },
+      { label: "Cities", href: "/cities" },
     ],
   },
   {
@@ -22,19 +22,19 @@ const footerColumns = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "/about" },
-      { label: "Careers", href: "#" },
-      { label: "Newsroom", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "About Us", href: "/about-us" },
+      { label: "Careers", href: "/careers" },
+      { label: "Newsroom", href: "/blog" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Support",
     links: [
-      { label: "Report an Issue", href: "#" },
-      { label: "FAQs", href: "#" },
-      { label: "Terms & Conditions", href: "#" },
-      { label: "Privacy Policy", href: "#" },
+      { label: "Report an Issue", href: "/support/app-issues" },
+      { label: "FAQs", href: "/support/faq" },
+      { label: "Terms & Conditions", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy" },
     ],
   },
 ];
@@ -104,9 +104,9 @@ export default function Footer() {
             © {new Date().getFullYear()} Riksho Technologies Pvt. Ltd. All rights reserved.
           </p>
           <div className="footer-legal">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms of Service</Link>
-            <Link href="#">Cookie Policy</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
       </div>

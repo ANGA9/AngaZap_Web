@@ -1,3 +1,5 @@
+import { Handshake, Zap, Target } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -63,17 +65,17 @@ export default function CareersPage() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
               <div style={{ background: "white", padding: "40px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>🤝</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><Handshake size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "16px" }}>Riders & drivers first</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Every product decision we make is evaluated by how much it improves the lives of our users and partners.</p>
               </div>
               <div style={{ background: "white", padding: "40px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>⚡</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><Zap size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "16px" }}>Bias for action</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We prefer a good decision made today over a perfect decision made next week. We move fast and iterate.</p>
               </div>
               <div style={{ background: "white", padding: "40px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>🎯</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><Target size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "16px" }}>Own the outcome</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We take responsibility for our work from start to finish. If something is broken, we fix it regardless of whose job it is.</p>
               </div>

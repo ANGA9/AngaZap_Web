@@ -1,3 +1,5 @@
+import { MapPin, Lock, XCircle } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -43,17 +45,17 @@ export default function PrivacyPage() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", marginBottom: "60px" }}>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>📍</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><MapPin size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Location Data</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We only track your location when the app is active to provide rides and deliveries safely.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>🔒</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Lock size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Data Security</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Your payment and personal details are encrypted and stored on secure servers with strict access controls.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>❌</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><XCircle size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Third-Party Sharing</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We do not sell your personal data. We only share data with essential service providers like payment gateways.</p>
               </div>

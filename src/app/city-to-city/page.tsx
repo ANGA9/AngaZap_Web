@@ -1,3 +1,5 @@
+import { Car, Truck } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -96,15 +98,15 @@ export default function CityToCityPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Vehicle types for the long haul</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🚗 Sedan</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Car size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Sedan</h4>
                     <p className="text-muted">Comfortable seating for up to 4 passengers with standard boot space. Perfect for couples or small families.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🚙 SUV</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Car size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> SUV</h4>
                     <p className="text-muted">Extra legroom and large boot space. Seats up to 6 comfortably. Ideal for longer trips or lots of luggage.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🚐 Tempo Traveller</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Truck size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Tempo Traveller</h4>
                     <p className="text-muted">Premium minibuses for large groups of 9 to 14 passengers. Great for family vacations or corporate retreats.</p>
                   </li>
                 </ul>

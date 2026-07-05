@@ -1,3 +1,5 @@
+import { MapPin, Rocket, Globe, Plane, Clock, BaggageClaim } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -43,17 +45,17 @@ export default function CitiesHubPage() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", marginBottom: "60px" }}>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>📍</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><MapPin size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Metro Coverage</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Available across all major tier 1 metropolitan cities with rapid ETA response times.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>🚀</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Rocket size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Expanding Quickly</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We are launching in new tier 2 and tier 3 cities every month to connect the entire country.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>🌐</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Globe size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Regional Support</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Our app and customer support operates in multiple local languages for regional accessibility.</p>
               </div>
@@ -70,15 +72,15 @@ export default function CitiesHubPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Seamless Airport Transfers</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>✈️ Dedicated Pickup Zones</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Plane size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Dedicated Pickup Zones</h4>
                     <p className="text-muted">Skip the chaotic taxi lines. We have partnered with major airports to provide exclusive Riksho pickup points right outside arrivals.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🕒 Flight Tracking</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Clock size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Flight Tracking</h4>
                     <p className="text-muted">Enter your flight number when booking ahead. We monitor delays and adjust your driver's arrival time automatically.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🧳 Extra Luggage Space</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><BaggageClaim size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Extra Luggage Space</h4>
                     <p className="text-muted">Choose our SUV or Premium tiers to ensure you have plenty of trunk space for all your travel bags.</p>
                   </li>
                 </ul>

@@ -1,3 +1,5 @@
+import { Utensils, Package, ShoppingCart } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -43,17 +45,17 @@ export default function DeliveryPage() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>🍔</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><Utensils size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Food</h4>
                 <p className="text-muted" style={{ fontSize: "15px" }}>Hot meals from your favorite restaurants, delivered fresh.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>📦</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><Package size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Parcels & Documents</h4>
                 <p className="text-muted" style={{ fontSize: "15px" }}>Secure delivery for important documents, gifts, or forgotten keys.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", textAlign: "center" }}>
-                <div style={{ fontSize: "40px", marginBottom: "16px" }}>🛒</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}><ShoppingCart size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Groceries</h4>
                 <p className="text-muted" style={{ fontSize: "15px" }}>Daily essentials and monthly groceries delivered to your door.</p>
               </div>

@@ -1,3 +1,5 @@
+import { Smartphone, Accessibility, Dog } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -43,17 +45,17 @@ export default function AccessibilityPage() {
             
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px", marginBottom: "60px" }}>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>📱</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Smartphone size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>App Accessibility</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Our app supports screen readers, high contrast modes, and dynamic text sizing for visually impaired users.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>🦽</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Accessibility size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Wheelchair Access</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>We are rolling out a dedicated fleet of wheelchair-accessible vehicles (WAV) in select metro areas.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}>🐕‍🦺</div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Dog size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Service Animals</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Our policy strictly mandates that all partners must accept riders traveling with service animals.</p>
               </div>

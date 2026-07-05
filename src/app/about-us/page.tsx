@@ -1,3 +1,5 @@
+import { Handshake, Target, TrendingUp, File, Star } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -70,15 +72,15 @@ export default function AboutHubPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Fueling sustainable growth</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>📈 Financial Highlights</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><TrendingUp size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Financial Highlights</h4>
                     <p className="text-muted">Consistent quarter-over-quarter growth in GMV and gross margins across all operational territories.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>📄 Quarterly Reports</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><File size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Quarterly Reports</h4>
                     <p className="text-muted">Access our latest earnings releases, SEC filings, and shareholder letters directly from our investor portal.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🎯 Strategic Vision</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Target size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Strategic Vision</h4>
                     <p className="text-muted">Learn about our upcoming expansions into tier 2 cities and our aggressive push into the logistics and freight market.</p>
                   </li>
                 </ul>
@@ -99,15 +101,15 @@ export default function AboutHubPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Driver Stories</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🗣️ Voices from the road</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><MessageSquare size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Voices from the road</h4>
                     <p className="text-muted">Read inspiring stories from the partners who keep our cities moving every single day.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🌟 Partner Spotlights</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Star size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Partner Spotlights</h4>
                     <p className="text-muted">Every month we highlight top-rated drivers who have gone above and beyond for their passengers.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🤝 Community Building</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Handshake size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Community Building</h4>
                     <p className="text-muted">Discover how driving with Riksho has helped partners fund education, buy homes, and build businesses.</p>
                   </li>
                 </ul>

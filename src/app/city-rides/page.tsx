@@ -1,3 +1,5 @@
+import { MapPin, Banknote, CheckCircle2, AlertTriangle } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -107,19 +109,19 @@ export default function CityRidesPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Why ride with us?</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>💸 Upfront Pricing</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Banknote size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Upfront Pricing</h4>
                     <p className="text-muted">No surprises. See your guaranteed fare before you confirm your ride.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>✅ Verified Drivers</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><CheckCircle2 size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Verified Drivers</h4>
                     <p className="text-muted">Every driver passes a rigorous background check before getting on the road.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🚨 24/7 SOS</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><AlertTriangle size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> 24/7 SOS</h4>
                     <p className="text-muted">Emergency assistance is just one tap away in the Riksho app.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>📍 Live Ride-Sharing</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><MapPin size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Live Ride-Sharing</h4>
                     <p className="text-muted">Share your live location and trip status with family and friends.</p>
                   </li>
                 </ul>

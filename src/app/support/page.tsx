@@ -1,3 +1,5 @@
+import { Package, Car, User, Smartphone } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -45,7 +47,7 @@ export default function SupportHubPage() {
               
               {/* Passengers */}
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", display: "flex", flexDirection: "column" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}>👤</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}><User size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "24px", marginBottom: "8px" }}>Passengers</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6", marginBottom: "24px", flexGrow: 1 }}>Get help with rides, payment methods, receipts, and account settings.</p>
                 <Link href="#" style={{ color: "var(--color-indigo)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px" }}>View Articles →</Link>
@@ -53,7 +55,7 @@ export default function SupportHubPage() {
 
               {/* Drivers */}
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", display: "flex", flexDirection: "column" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}>🚗</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}><Car size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "24px", marginBottom: "8px" }}>Drivers</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6", marginBottom: "24px", flexGrow: 1 }}>Resources for payouts, vehicle requirements, ratings, and driver safety.</p>
                 <Link href="#" style={{ color: "var(--color-indigo)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px" }}>View Articles →</Link>
@@ -61,7 +63,7 @@ export default function SupportHubPage() {
 
               {/* Couriers */}
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", display: "flex", flexDirection: "column" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}>📦</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}><Package size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "24px", marginBottom: "8px" }}>Couriers & Fleets</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6", marginBottom: "24px", flexGrow: 1 }}>Assistance with package delivery, fleet management, and logistics.</p>
                 <Link href="#" style={{ color: "var(--color-indigo)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px" }}>View Articles →</Link>
@@ -69,7 +71,7 @@ export default function SupportHubPage() {
 
               {/* App Issues */}
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)", display: "flex", flexDirection: "column" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}>📱</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "20px", marginBottom: "20px" }}><Smartphone size={24} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "24px", marginBottom: "8px" }}>App Troubleshooting</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6", marginBottom: "24px", flexGrow: 1 }}>Fix GPS issues, login problems, crashes, and other technical glitches.</p>
                 <Link href="#" style={{ color: "var(--color-indigo)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px" }}>View Articles →</Link>

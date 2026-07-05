@@ -1,3 +1,5 @@
+import { Zap, GraduationCap, Hospital, User, TreePine, Recycle } from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -69,15 +71,15 @@ export default function ImpactHubPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Investing in people</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🎓 Education Grants</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><GraduationCap size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Education Grants</h4>
                     <p className="text-muted">Providing scholarships and educational support for the children of our top-performing driver partners.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🏥 Health Camps</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Hospital size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Health Camps</h4>
                     <p className="text-muted">Free annual medical checkups, eye exams, and subsidized healthcare plans for active drivers.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>👩🏽 Women Behind the Wheel</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><User size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Women Behind the Wheel</h4>
                     <p className="text-muted">A dedicated onboarding program to empower more female entrepreneurs in the gig economy.</p>
                   </li>
                 </ul>
@@ -98,15 +100,15 @@ export default function ImpactHubPage() {
                 <h2 className="font-display" style={{ fontSize: "36px", marginBottom: "24px" }}>Greener cities for everyone</h2>
                 <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>⚡ The EV Transition</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Zap size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> The EV Transition</h4>
                     <p className="text-muted">We are aggressively subsidizing electric vehicles for our partners to phase out combustion engines.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>🌲 Carbon Offsetting</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><TreePine size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Carbon Offsetting</h4>
                     <p className="text-muted">For rides not yet on EVs, we invest in verified carbon offset programs like reforestation.</p>
                   </li>
                   <li>
-                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}>♻️ Shared Rides</h4>
+                    <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px", display: "flex", alignItems: "center", gap: "8px" }}><Recycle size={20} strokeWidth={2} style={{ color: "var(--color-indigo)", marginRight: "8px" }} /> Shared Rides</h4>
                     <p className="text-muted">Promoting carpooling and shared auto routes to reduce traffic congestion and per-passenger emissions.</p>
                   </li>
                 </ul>

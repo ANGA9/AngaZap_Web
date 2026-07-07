@@ -1,4 +1,4 @@
-import { MapPin, Link } from "lucide-react";
+import { MapPin, Link as LinkIcon } from "lucide-react";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -50,7 +50,7 @@ export default function LiveTrackingPage() {
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Our advanced mapping technology calculates the fastest, most efficient route in real-time.</p>
               </div>
               <div style={{ background: "white", padding: "32px", borderRadius: "var(--radius-lg)", boxShadow: "var(--shadow-card)", border: "1px solid var(--admin-border)" }}>
-                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><Link size={20} strokeWidth={2} /></div>
+                <div style={{ width: "40px", height: "40px", borderRadius: "12px", backgroundColor: "var(--color-indigo-tint)", color: "var(--color-indigo)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: "16px", marginBottom: "20px" }}><LinkIcon size={20} strokeWidth={2} /></div>
                 <h4 className="font-display" style={{ fontSize: "20px", marginBottom: "8px" }}>Share Your Status</h4>
                 <p className="text-muted" style={{ fontSize: "15px", lineHeight: "1.6" }}>Send a live tracking link to friends, family, or customers so they know exactly when to expect you.</p>
               </div>

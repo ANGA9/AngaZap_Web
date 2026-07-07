@@ -1,3 +1,4 @@
+"use client";
 import { Handshake, Zap, Target } from "lucide-react";
 
 import Navbar from "@/components/Navbar";

@@ -1,0 +1,76 @@
+"use client";
+
+import { BarChart3, TrendingUp, CheckCircle, Clock } from "lucide-react";
+
+export default function BusinessDashboard() {
+  return (
+    <div>
+      <h1 className="text-3xl font-display font-bold text-gray-900 mb-2">Overview</h1>
+      <p className="text-gray-500 mb-8">Welcome back. Here's what's happening with your fleet today.</p>
+
+      {/* Stats Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-medium text-gray-500 mb-1">Active Shipments</p>
+            <h3 className="text-2xl font-bold text-gray-900">24</h3>
+          </div>
+          <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center">
+            <TruckIcon />
+          </div>
+        </div>
+
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-medium text-gray-500 mb-1">Completed (Month)</p>
+            <h3 className="text-2xl font-bold text-gray-900">412</h3>
+          </div>
+          <div className="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center">
+            <CheckCircle size={24} />
+          </div>
+        </div>
+
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-medium text-gray-500 mb-1">Scheduled Jobs</p>
+            <h3 className="text-2xl font-bold text-gray-900">8</h3>
+          </div>
+          <div className="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center">
+            <Clock size={24} />
+          </div>
+        </div>
+
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-medium text-gray-500 mb-1">Logistics Spend</p>
+            <h3 className="text-2xl font-bold text-gray-900">₹45.2k</h3>
+          </div>
+          <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center">
+            <TrendingUp size={24} />
+          </div>
+        </div>
+      </div>
+
+      {/* Recent Activity */}
+      <h2 className="text-xl font-semibold text-gray-900 mb-4">Live Tracking Map (Mock)</h2>
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 h-[400px] flex flex-col items-center justify-center text-center">
+        <BarChart3 size={48} className="text-gray-300 mb-4" />
+        <h3 className="text-lg font-medium text-gray-900 mb-1">Live Map Integration</h3>
+        <p className="text-gray-500 max-w-md">
+          Once the dashboard is connected to the real-time API, you'll see a live view of all your active fleet trucks on this map.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function TruckIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M10 17h4V5H2v12h3"/>
+      <path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h2"/>
+      <circle cx="7.5" cy="17.5" r="2.5"/>
+      <circle cx="17.5" cy="17.5" r="2.5"/>
+    </svg>
+  );
+}

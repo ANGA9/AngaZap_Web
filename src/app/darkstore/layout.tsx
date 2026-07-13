@@ -33,12 +33,12 @@ export default function DarkstoreLayout({
           return;
         }
 
-        // Verify store_ops or admin role via backend
-        const me = await portalFetch("/admin/me").catch(() => null);
-        // Also try the admin/me endpoint — if the user is admin they can access darkstore
+        // Verify store_ops or admin role via backend. Use the generic /me
+        // (returns the real users.role for any authenticated caller) — /admin/me
+        // is admin-gated and would 403 a legitimate store_ops account.
+        const me = await portalFetch("/me").catch(() => null);
         const role = me?.role;
         if (role !== "admin" && role !== "store_ops") {
-          // Not admin, check if they have store_ops in their user profile
           router.push("/darkstore/login");
           setLoading(false);
           return;
